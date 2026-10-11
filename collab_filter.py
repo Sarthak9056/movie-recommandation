@@ -23,7 +23,7 @@ rmse_baseline = accuracy.rmse(baseline_predictions, verbose=False)
 baseline_rmse = accuracy.rmse(baseline_predictions)
 
 # Train a collaborative filtering model using SVD
-model = SVD(n_factors=100, random_state=42, n_epochs = 50)
+model = SVD(n_factors=20, random_state=42, n_epochs = 100, reg_all = 0.1)
 model.fit(trainset)
 
 svd_predictions = model.test(testset)
