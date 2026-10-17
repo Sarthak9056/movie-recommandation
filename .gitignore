@@ -13,10 +13,6 @@ env/
 *.pkl
 *.joblib
 
-# Data
-dataset/*.csv
-!dataset/.gitkeep
-
 # Environment
 .env
 
